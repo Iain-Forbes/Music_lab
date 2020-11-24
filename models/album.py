@@ -30,8 +30,8 @@ def select(id):
     values = [id]
     result = run_sql(sql, values)[0]
     if result is not None:
-        artist = Artist(result['name'],result['id'])
-    return artist
+        album = Album(result['name'],result['id'])
+    return album
 
 # UPDATE
 def update(artist):
